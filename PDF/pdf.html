@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div style="display: flex;">
+            <img style="width: 300px; height: 50px;"
+                src="https://res.cloudinary.com/dn6hfkci0/image/upload/v1690879828/Logo_Transparent-01_fo4qh9.png"
+                alt="">
+            <!-- <h1>Al Zahour Scrap</h1> -->
+
+            <div style="margin-left: 50px;">
+                <h2 style="margin: 0px;">AL Zuhour Al Hamra Metal Scrap</h1>
+                    <h2 style="margin: 0px;">Tr.LLC</h1>
+
+                        <h3 style="margin-top: 2px; margin-bottom: 0px;">Agreement Quotation
+                    </h2>
+
+                    <p style="margin: 0; font-size: medium;">Plot 2222, Al Sajaa Industrail Area</p>
+                    <p style="margin: 0; font-size: medium;">Al Sajaa, Sharjah, United Arab Emirates</p>
+                    <p style="margin: 0; font-size: medium;">Tel: +971 56 751 5767 Fax: +971 50 696 8322</p>
+                    <p style="margin: 0; margin-top: 4px; font-size: medium;">Email</p>
+                    <p style="margin: 0; font-size: medium;"><a href="info@azscrap.com">info@azscrap.com</a></p>
+                    <p style="margin: 0; margin-top: 4px; font-size: medium;">Website</p>
+                    <p style="margin: 0; font-size: medium;"><a href="www.azscrap.com">www.azscrap.com</a></p>
+
+            </div>
+        </div>
+        <h3
+            style="font-weight: 500; border-bottom: 1px solid gray; padding-bottom: 4px; margin-top:10px; margin-bottom: 10px;">
+            Ticket No.
+            ${tikcetdata?.index}
+        </h3>
+
+        <h4 style="font-weight: 500; font-size: large; margin-top:10px; margin-bottom: 10px;">Quotation for Disposal of
+            scrap
+            ${tikcetdata?.categoryID.categoryName}>${tikcetdata?.subCategoryID.subCategoryName}</h4>
+
+        <h4 style="font-size: large; margin-top:10px; margin-bottom: 10px;">Quote To&nbsp;&nbsp;&nbsp; Date: </h4>
+        <table style="border-collapse: collapse;">
+            <tr>
+                <td style="padding: 3px; font-size: small; ">
+                    ${userData?.company}
+                </td>
+
+
+            </tr>
+
+            <tr>
+                <td style="padding: 3px; font-size: small; ">
+                    TRN no
+                </td>
+                <td style="padding: 3px;" font-size: small;>
+                    ${userData?.trnNumber}
+                </td>
+
+            </tr>
+
+            <tr>
+                <td style="padding: 3px; font-size: small; ">
+                    License no
+                </td>
+                <td style="padding: 3px;" font-size: small;>
+                    ${userData?.tradeLicenseNo}
+                </td>
+
+            </tr>
+
+            <tr>
+                <td style="padding: 3px; font-size: small; ">
+                    Contact Name
+                </td>
+                <td style="padding: 3px;" font-size: small;>
+                    ${userData?.name}
+                </td>
+
+            </tr>
+
+            <tr>
+                <td style="padding: 3px; font-size: small; ">
+                    Contact No
+                </td>
+                <td style="padding: 3px;" font-size: small;>
+                    ${userData?.phoneNo}
+                </td>
+
+            </tr>
+
+        </table>
+        <table style="border-collapse: collapse; margin-top: 15px;">
+            <tr>
+
+                <th style="border: 1px solid black; padding: 3px; font-size: small;">Description</th>
+                <th style="border: 1px solid black; padding: 3px; font-size: small;">Unit</th>
+                <th style="border: 1px solid black; padding: 3px; font-size: small;">Price AED</th>
+
+
+            </tr>
+            <tr>
+
+
+                <td style="border: 1px solid black; padding: 3px; font-size: small;">
+                    ${tikcetdata?.discription}
+                </td>
+                <td style="border: 1px solid black; padding: 3px; font-size: small;">
+                    ${tikcetdata?.weightUnit}
+                </td>
+                <td style="border: 1px solid black; padding: 3px; font-size: small;">
+                    ${tikcetdata?.price}
+                </td>
+
+            </tr>
+
+
+
+        </table>
+
+
+        <h3 style="font-weight: 600; font-size: large; margin-top: 10px; margin-bottom: 10px;">Notes/Terms & Condition
+        </h3>
+
+        <div style="font-size: large; border: 1px solid gray; padding: 20px;">
+            ${tikcetdata?.condition}
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: end;">
+            <div>
+                <div style="font-size: medium;">Authorized Signature(s)</div>
+                <div style="font-size: medium; margin-top: 15px;">From the Seller</div>
+                <div style="font-size: medium;">${userData?.company}</div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <div style="font-size: medium;">Authorized Signature(s)</div>
+                <div style="font-size: medium; margin-top: 15px;">From the Buyer</div>
+                <div style="font-size: medium;">Al Zuhour Al Hamra Metal Scrap Tr LLC</div>
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-top: 40px;">
+                <div style="width: 335px;">
+                    <p style="text-align: center; margin: 0;"><b>Address:</b> plot 2222, Al Sajaa Industrial, Al Sajaa,
+                        Sharjah, United Arab Emirates </p>
+                    <p style="margin: 0;"><b>Tel: </b>+971 56 751 5767 <b>Fax: </b>+971 50 696 8322</p>
+                    <p style="margin: 0; text-align: center;"><b>Email: </b><a
+                            href="sales@azscrap.com">sales@azscrap.com</a> <b>Website: </b><a
+                            href="www.azscrap.com">www.azscrap.com</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
